@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uex.css">
+    <style>
+        /* Add this CSS for the visible menu options */
+        .menu {
+            display: none; /* Hide the menu by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70vw;
+            height: 100vh;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            flex-direction: column; 
+        }
+
+        .menu-section {
+            margin: 50px;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .header-text {
+            cursor: pointer;
+        }
+    </style>
+    <title>Your Page</title>
+</head>
+<body>
+
+    <header>
+        <img src="images/barhygs.png" alt="Header Image" class="header-image">
+        <!-- Add the visible menu options -->
+        <div class="header-text" onclick="toggleMenu()">≡</div>
+        <div class="menu" id="menu">
+            <div class="menu-section" onclick="navigateTo('html.html')">Home</div>
+            <div class="menu-section" onclick="navigateTo('artenthusiast.html')">Art Enthusiast</div>
+            <div class="menu-section" onclick="navigateTo('cultural-connoisseur.html')">Cultural-Connoisseur</div>
+            
+
+            <!-- Add other menu options as needed -->
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <ul>
+            <li><a href="urbanexplorer.html">Urban Explorer></a></li>
+            <li><a href="Domen.html">Domen></a></li>
+            <li><a href="barhygs.html">Bar Hygs</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Godsbanen Image 1 -->
+    <section class="uex-image-1">
+        <img src="images/bh1.jpg" alt="Godsbanen Image 1">
+    </section>
+
+    <!-- Godsbanen Title and Text -->
+    <section class="uex-info">
+        <h2>Welcome To Bar Hygs.</h2>
+       <p>Bar Hygs is the name of the bar at Tørv on Hveensgade. Food trucks stand side by side in the cozy street food area. There is a good variety when it comes to what you can eat. But when it comes to drinks, there isn't a great selection at the stalls. Here you have to find the bar Bar Hygs, which can be found inside the large tent. It is open Thursday to Sunday from 15 or 16.</p>
+       <P>During the summer period, things are going well in the tent at Bar Hygs. You sit at long tables and get to know each other. The conversation goes across the tables and there is loud singing. Occasionally there are also people on the dance floor. The floor is tiled, and string lights are suspended. The atmosphere is good and down to earth. There is room for everyone here. At the weekend and in the evenings, there is a party atmosphere. If the weather is good, the live music and the party occasionally move outside. The service is welcoming and in a good mood.</P>
+
+    </section>
+
+    <!-- Must Do's Title and Text -->
+    <section class="must-dos">
+        <h2>Must Do’s</h2>
+        <p>Enjoy a Diverse Culinary Experience:
+            🌮 Explore the variety of food trucks in the cozy street food area at Tørv on Hveensgade. From local delicacies to international flavors, the food trucks offer a diverse culinary experience. Try different dishes and savor the unique tastes available.</p>
+        <p>Unwind at Bar Hygs:
+            🍻 Visit the bar inside the large tent, Bar Hygs, to enjoy a relaxed and vibrant atmosphere. Whether it's a Thursday evening or a lively weekend night, Bar Hygs provides a social setting where you can unwind with friends. Sit at long tables, strike up conversations with fellow patrons, and soak in the friendly and down-to-earth ambiance.</p>
+        <p>Experience the Summer Vibes:
+            ☀️ Make the most of the summer period in the tent at Bar Hygs. Join the community at long tables, where conversations flow freely, and occasional singing adds to the lively atmosphere. If you're up for it, hit the dance floor on the tiled surface. During weekends and evenings, the place transforms into a lively party venue. Don't miss the chance to experience live music and, if the weather is favorable, enjoy the festivities outdoors.</p>
+    </section>
+
+    <!-- Next Button Image -->
+    <section class="next-button">
+        <a href="gedulgt.html">
+            <img src="images/uexnext.png" alt="Next Button">
+        </a>
+    </section>
+
+    <section class="uex-image-2">
+        <img src="images/bh2.jpg" alt="Godsbanen Image 2"</section>
+
+    <script src="js.js"></script>
+</body>
+</html>

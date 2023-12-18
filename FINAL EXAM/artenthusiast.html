@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aex.css">
+    <style>
+        /* Add this CSS for the visible menu options */
+        .menu {
+            display: none; /* Hide the menu by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70vw;
+            height: 100vh;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            flex-direction: column; 
+        }
+
+        .menu-section {
+            margin: 50px;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .header-text {
+            cursor: pointer;
+        }
+    </style>
+    <title>Your Page</title>
+</head>
+<body>
+
+    <header>
+        <img src="images/aexp.png" alt="Header Image" class="header-image">
+        
+        <!-- Add the visible menu options -->
+        <div class="header-text" onclick="toggleMenu()">≡</div>
+        <div class="menu" id="menu">
+            <div class="menu-section" onclick="navigateTo('html.html')">Home</div>
+            <div class="menu-section" onclick="navigateTo('urbanexplorer.html')">Urban Explorer</div>
+            <div class="menu-section" onclick="navigateTo('cultural-connoisseur.html')">Cultural Connoisseur</div>
+            
+
+            <!-- Add other menu options as needed -->
+        </div>
+    </header>
+
+    <section class="body-text">
+        Indulge your senses in the vibrant world of artistic expression with our "Art Enthusiast" menu. Immerse yourself in a curated selection of experiences that celebrate creativity and aesthetic marvels across Aarhus. From contemporary art exhibitions that push boundaries to hidden galleries showcasing local talents, this menu is a journey into the heart of the city's vibrant art scene. Discover the captivating stories behind each masterpiece and let the city unfold as your own personal canvas. Elevate your cultural exploration and embark on an unforgettable adventure that captures the essence of Aarhus's artistic soul. Unveil the beauty that lies within each stroke, sculpture, and installation, and let your passion for art flourish in every moment.
+    </section>
+
+    <section class="large-image">
+        <img src="images/aexdigest.png" alt="Large Image">
+    </section>
+
+    <section class="small-image">
+        <a href="jartacademy.html">
+            <img src="images/aexbegin.png" alt="Smaller Image">
+        </a>
+    </section>
+
+    <script src="js.js"></script>
+ 
+    
+    
+</body>
+</html>

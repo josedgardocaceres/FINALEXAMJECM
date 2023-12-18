@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cc.css">
+    <style>
+        /* Add this CSS for the visible menu options */
+        .menu {
+            display: none; /* Hide the menu by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70vw;
+            height: 100vh;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            flex-direction: column; 
+        }
+
+        .menu-section {
+            margin: 50px;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .header-text {
+            cursor: pointer;
+        }
+    </style>
+    <title>Your Page</title>
+</head>
+<body>
+
+    <header>
+        <img src="images/hq.png" alt="Header Image" class="header-image">
+        <div class="header-text" onclick="toggleMenu()">≡</div>
+        <div class="menu" id="menu">
+            <div class="menu-section" onclick="navigateTo('html.html')">Home</div>
+            <div class="menu-section" onclick="navigateTo('artenthusiast.html')">Art Enthusiast</div>
+            <div class="menu-section" onclick="navigateTo('urbanexplorer.html')">Urban Explorer</div>
+            
+
+            <!-- Add other menu options as needed -->
+        </div>
+    </header>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <ul>
+            <li><a href="cultural-connoisseur.html">Cultural Connoisseur></a></li>
+            <li><a href="godsbanen.html">Godsbanen></a></li>
+            <li><a href="lecoq.html">Lecoq></a></li>
+            <li><a href="headquarters.html">HeadQuarters</a></li>
+        </ul>
+    </nav>
+
+    <!-- Godsbanen Image 1 -->
+    <section class="godsbanen-image-1">
+        <img src="images/hq1.png" alt="headQuarters Image 1">
+    </section>
+
+    <!-- Godsbanen Title and Text -->
+    <section class="godsbanen-info">
+        <h2>Welcome To HeadQuarters.</h2>
+        <p>Since HeadQuarters opened its doors in 2011, countless concerts and events have been held, and although we are a place that is constantly evolving, the main element remains the same; our love for music. We are constantly working on new measures to express that love, and now it is the turn of the written media. We call this project HQ music. The name covers a number of initiatives that together form a platform and channel for music dissemination. Here we strive to inspire and convey music across a broad spectrum of genres and expressions – no artist is too narrow, unknown or niche.</p>
+        <p>HeadQuarters is an oasis in Aarhus, where good music, wonderful experiences and a cozy atmosphere are the first priority.
+
+            Every week there are a multitude of concerts with a primary focus on new, original music. At HeadQuarters we take great pride in presenting a versatile program of high quality to all our guests.
+            
+            On Thursday, Friday and Saturday, there is an authentic nightclub, which takes you back to the original discotheques, where you can dance all night long.
+            HQ, as the place is also called, as a nightclub often has a musical basis in soul, funk and disco, which you can quickly sense when you enter the physical setting that exudes the 60s and 70s.</p>
+    </section>
+
+    <!-- Must Do's Title and Text -->
+    <section class="must-dos">
+        <h2>Must Do’s</h2>
+      <p>Bust a Move on the Flashing Dance Floor: 🕺✨
+        Head straight to the dazzling dance floor at HeadQuarters and showcase your best dance moves under the vibrant disco lights. Let the rhythm of the music guide your steps as you immerse yourself in the electric atmosphere. Don't be surprised if the disco ball above adds a touch of magic to your dance journey!</p>
+        <p>Groove to Retro Beats with a Disco Diva Playlist: 🎶👯‍♀️
+            Experience the ultimate throwback by requesting your favorite disco hits from the DJ. HeadQuarters is all about nostalgia, so gather your friends and create a playlist of iconic disco tunes. Whether it's the Bee Gees, Donna Summer, or Chic, let the funky beats transport you back to the golden era of disco.</p>
+        <p>VIP Glam at the Mirrorball Lounge: 🌟🍸
+            Elevate your nightclub experience by securing a spot at the exclusive Mirrorball Lounge. Sip on signature disco-themed cocktails surrounded by glamorous mirrors and dazzling lights. This VIP area offers a stylish escape where you can relax, chat with friends, and soak in the glamorous ambiance while enjoying the beats from the DJ.</p>
+    </section>
+
+    <!-- Next Button Image -->
+    <section class="next-button">
+        <a href="ccend.html">
+            <img src="images/nb1.png" alt="Next Button">
+        </a>
+    </section>
+
+    <!-- Godsbanen Image 2 -->
+    <section class="godsbanen-image-2">
+        <img src="images/hq3.png" alt="HeadQuarters Image 2">
+    </section>
+
+    <script src="js.js"></script>
+
+</body>
+</html>

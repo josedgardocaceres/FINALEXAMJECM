@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #F9E5D7; /* Your desired background color */
+}
+
+header {
+    background-color: #F9E5D7;
+    color: #000000;
+    padding: 31px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    border-bottom: 1px solid #000000;
+}
+
+.header-text22 {
+
+    font-size: x-large;
+}
+
+.logo-image img {
+    width: 190px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+.section {
+    width: 50%; /* Adjust the width as needed */
+    padding: 19px; /* Adjust the padding as needed */
+    position: relative;
+    border: none;
+    font-size: x-large;
+}
+
+.section-image {
+    width: 120px; /* Adjust the width as needed for a larger image */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-section h2 {
+    font-size: 65px; /* Adjust the font size as needed */
+}
+
+.welcome-section p {
+    font-size: 30px; /* Adjust the font size for "Scroll to digest" */
+}
+
+.image-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.image-container {
+    margin: 10px;
+}
+
+.image-container img {
+    width: 400px; /* Adjust the width of the images */
+    height: auto;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.digest-section {
+    display: flex; /* Use flexbox */
+    background-color: #EEC1A4; /* Your desired background color */
+    padding: 35px;
+    text-align: left;
+    color: #000000;
+}
+
+.digest-section h2 {
+    font-size: 65px; /* Adjust the font size as needed */
+    text-align: left;
+}
+
+.digest-section p {
+    font-size: 33px; /* Adjust the font size as needed */
+    text-align: left;
+}
+
+.digest-image {
+    margin-left: auto; /* Push the image to the right */
+}
+
+.digest-image img {
+    width: 200px; /* Adjust the width of the image */
+    height: auto;
+}
+
+.how-it-works-section {
+    display: flex; /* Use flexbox */
+    background-color: #EEC1A4; /* Your desired background color */
+    padding: 35px;
+    text-align: left;
+    color: #000000;
+}
+
+.how-it-works-section h2 {
+    font-size: 65px; /* Adjust the font size as needed */
+    text-align: left;
+}
+
+.how-it-works-section p {
+    font-size: 33px; /* Adjust the font size as needed */
+    text-align: left;
+}
+
+.how-it-works-image {
+    margin-left: auto; /* Push the image to the right */
+}
+
+.how-it-works-image img {
+    width: 200px; /* Adjust the width of the image */
+    height: auto;
+}
+
+.digest-categories-section {
+    background-color: #EEC1A4;
+    padding: 35px;
+    text-align: left;
+    color: #000000;
+    flex-direction: column;
+    display: flex;
+}
+
+.digest-title h2 {
+    font-size: 65px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.digest-contentt {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.digest-category-box {
+    width: 30%; /* Adjust the width as needed */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #FFFFFF; /* Adjust the background color as needed */
+    margin-bottom: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+    display: flex;
+}
+
+/* Individual colors for each box */
+.cultural-connoisseur {
+    text-decoration: none;
+    color: #000000;
+    background-color: #FA9FAE; /* Color for Cultural Connoisseur box (e.g., gold) */
+}
+
+.urban-explorer {
+    background-color: #C1B8F5; /* Color for Urban Explorer box (e.g., light green) */
+    text-decoration: none;
+    color: #000000;
+}
+
+.art-enthusiast {
+    background-color: #5B7895; /* Color for Art Enthusiast box (e.g., sky blue) */
+}
+
+a {
+    text-decoration: none;
+}
+
+.digest-category-box.urban-explorer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.digest-category-box.art-enthusiast a {
+    text-decoration: none;
+    color: black;
+}
+
+.about-section {
+    padding: 0 20px; /* Add padding to the sides */
+    font-size: 18px; /* Increase text size */
+    text-align: justify; /* Align text */
+    line-height: 1.5; /* Set line height for better readability */
+    background-color: #EEC1A4;
+}
+
+.section {
+    text-decoration: none;
+    color: #000000;
+}

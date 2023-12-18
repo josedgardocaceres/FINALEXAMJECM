@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aex.css">
+    <style>
+        /* Add this CSS for the visible menu options */
+        .menu {
+            display: none;
+            /* Hide the menu by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70vw;
+            height: 100vh;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            flex-direction: column;
+        }
+
+        .menu-section {
+            margin: 50px;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .header-text {
+            cursor: pointer;
+        }
+    </style>
+    <title>Your Page</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/undmas.png" alt="Header Image" class="header-image">
+        <!-- Add the visible menu options -->
+        <div class="header-text" onclick="toggleMenu()">≡</div>
+        <div class="menu" id="menu">
+            <div class="menu-section" onclick="navigateTo('html.html')">Home</div>
+            <div class="menu-section" onclick="navigateTo('urbanexplorer.html')">Urban Explorer</div>
+            <div class="menu-section" onclick="navigateTo('cultural-connoisseur.html')">Cultural Connoisseur</div>
+
+            <!-- Add other menu options as needed -->
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <ul>
+            <li><a href="urbanexplorer.html">Art Enthusiast></a></li>
+            <li><a href="jartacademy.html">Jutland Art Academy></a></li>
+            <li><a href="gendermuseum.html">Gender Museum></a></li>
+            <li><a href="undermasken.html">Under Masken</a></li>
+        </ul>
+    </nav>
+
+    <!-- Godsbanen Image 1 -->
+    <section class="aex-image-1">
+        <img src="images/um2.jpg" alt="Under Masken Image 1">
+    </section>
+
+    <!-- Godsbanen Title and Text -->
+    <section class="aex-info">
+        <h2>Welcome To Under Masken.</h2>
+        <p>Located down a staircase immediately next to the upscale Hotel Royal/Royal Scandinavian Casino, the small Café Under Masken (Under the Mask) differs from its neighbour in essentially every single regard. Under Masken is owned by the eccentric artist Hans Krull, whose philosophy and artwork truly permeates the bar. From its intricately decorated entrance to the aquaria built into the establishment’s wall, it is unlike any other watering hole in town.
+
+            This all contributes to a cosy and intimate atmosphere whether you visit Under Masken during the afternoon for a cup of coffee, in the evening for a (reasonably priced) beer, or at night for one of the unique and rather peculiar house cocktails. With a diverse clientele counting both young students and middle-aged creatives, Under Masken is absolutely worth a visit for anyone wishing to try something of the ordinary — if for no other reason, pay a visit to experience a pub whose décor and atmosphere might be (rightfully) described as both strange and cosy. Be prepared, however, for a lot of smoke, as smoking is allowed indoors and indeed seems a favoured pastime of many visitors.</p>
+    </section>
+
+    <!-- Must Do's Title and Text -->
+    <section class="must-dos">
+        <h2>Must Do’s</h2>
+        <p>Explore the Artistic Atmosphere: Immerse yourself in the eccentric and artistic ambiance created by Hans Krull. Admire the unique decor, including intricately decorated entrances and aquaria built into the walls. 🎨🍃</p>
+        <p>Sample Peculiar House Cocktails: Venture into the realm of peculiar and unique house cocktails offered at Under Masken. Experience the creativity of the bar in concocting drinks that stand out from the ordinary. 🍹🤩</p>
+        <p>Enjoy Cosy Conversations: Whether it's afternoon coffee, an evening beer, or a nighttime cocktail, savor the cosy and intimate atmosphere. Engage in conversations with the diverse clientele, including students and middle-aged creatives, making each visit a unique social experience. ☕🍻🗣️</p>
+    </section>
+
+    <!-- Next Button Image -->
+    <section class="next-button">
+        <a href="rateaex.html">
+            <img src="images/aexnext.png" alt="Next Button">
+        </a>
+    </section>
+
+    <section class="aex-image-2">
+        <img src="images/uem1.jpg" alt="Under Masken Image 2">
+    </section>
+
+    <script src="js.js"></script>
+</body>
+
+</html>

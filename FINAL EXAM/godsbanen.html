@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cc.css">
+    <style>
+        /* Add this CSS for the visible menu options */
+        .menu {
+            display: none; /* Hide the menu by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70vw;
+            height: 100vh;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            flex-direction: column; 
+        }
+
+        .menu-section {
+            margin: 50px;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .header-text {
+            cursor: pointer;
+        }
+    </style>
+    <title>Your Page</title>
+</head>
+<body>
+
+    <header>
+        <img src="images/godsbanen.png" alt="Header Image" class="header-image">
+        <!-- Add the visible menu options -->
+        <div class="header-text" onclick="toggleMenu()">≡</div>
+        <div class="menu" id="menu">
+            <div class="menu-section" onclick="navigateTo('html.html')">Home</div>
+            <div class="menu-section" onclick="navigateTo('artenthusiast.html')">Art Enthusiast</div>
+            <div class="menu-section" onclick="navigateTo('urbanexplorer.html')">Urban Explorer</div>
+            
+
+            <!-- Add other menu options as needed -->
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <ul>
+            <li><a href="cultural-connoisseur.html">Cultural Connoisseur></a></li>
+            <li><a href="godsbanen.html">Godsbanen</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Godsbanen Image 1 -->
+    <section class="godsbanen-image-1">
+        <img src="images/gb1.png" alt="Godsbanen Image 1">
+    </section>
+
+    <!-- Godsbanen Title and Text -->
+    <section class="godsbanen-info">
+        <h2>Welcome To Godsbanen.</h2>
+        <p>-Welcome to Godsbanen, an exciting cultural hub located in Aarhus, Denmark. This vibrant space is not only a historical site but also a contemporary center for creativity, art, and community.</p>
+        <p>-Today, Godsbanen is a dynamic cultural complex that hosts a wide range of artistic and cultural activities.</p>
+        <p>-Explore the various galleries, studios, and exhibition spaces showcasing contemporary art, photography, and installations.</p>
+    </section>
+
+    <!-- Must Do's Title and Text -->
+    <section class="must-dos">
+        <h2>Must Do’s</h2>
+        <p>🏗️ Don't miss the iconic Silo, a prominent structure on the Godsbanen premises. It has been transformed into a creative space, often hosting exhibitions, performances, and workshops.</p>
+        <p>🌿Enjoy the urban gardening projects scattered throughout Godsbanen. These green spaces provide a tranquil escape within the city and showcase sustainable initiatives.</p>
+        <p>🖌️Engage in your artistic side by participating in one of the many workshops offered at Godsbanen. From painting to pottery, there's something for everyone.</p>
+    </section>
+
+    <!-- Next Button Image -->
+    <section class="next-button">
+        <a href="lecoq.html">
+            <img src="images/nb1.png" alt="Next Button">
+        </a>
+    </section>
+
+    <!-- Godsbanen Image 2 -->
+    <section class="godsbanen-image-2">
+        <img src="images/gb2.png" alt="Godsbanen Image 2">
+    </section>
+
+    <script src="js.js"></script>
+</body>
+</html>
