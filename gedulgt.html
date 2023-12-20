@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="uex.css">
+
+    <!-- Internal styles for menu and header -->
+    <style>
+        .menu {
+            display: none; /* Hide the menu by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70vw;
+            height: 100vh;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            flex-direction: column; 
+        }
+
+        .menu-section {
+            margin: 50px;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .header-text {
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- Title of the webpage -->
+    <title>Your Page</title>
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+        <img src="images/ged.png" alt="Header Image" class="header-image">
+        
+        <!-- Menu icon and links -->
+        <div class="header-text" onclick="toggleMenu()">≡</div>
+        <div class="menu" id="menu">
+            <div class="menu-section" onclick="navigateTo('index.html')">Home</div>
+            <div class="menu-section" onclick="navigateTo('artenthusiast.html')">Art Enthusiast</div>
+            <div class="menu-section" onclick="navigateTo('cultural-connoisseur.html')">Cultural-Connoisseur</div>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs navigation -->
+    <nav class="breadcrumbs">
+        <ul>
+            <li><a href="urbanexplorer.html">Urban Explorer></a></li>
+            <li><a href="Domen.html">Domen></a></li>
+            <li><a href="barhygs.html">Bar Hygs></a></li>
+            <li><a href="barhygs.html">Gedulgt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section displaying the first image -->
+    <section class="uex-image-1">
+        <img src="images/Gedult1.jpg" alt="Gedulgt Image 1">
+    </section>
+
+    <!-- Section providing information about Gedulgt -->
+    <section class="uex-info">
+        <h2>Welcome To Gedulgt.</h2>
+        <p>Gedulgt is one of the best cocktail bars in Aarhus. Well hidden in a backyard in Fredensgade, you have to know it's there. At Gedulgt, they make cocktails that have to be experienced. Here is something for the eye and especially something for the taste. It is an experience to study how the bartenders work with cocktails and make them appear completely unique with smoke and colors.
+        Gedulgt is not just an ordinary cocktail bar. It was voted "Best Cocktail Bar In Denmark People's Choice" in 2022, and one of the bartenders was also awarded the title of "Best Bartender in Denmark". Gedulgt is open Thursday to Saturday.
+        There is a special atmosphere at Gedulgt. Stylish and cosy. You can take a seat at the long bar and keep an eye on the skilled bartenders, or take a seat at one of the tables.</p>
+    </section>
+
+    <!-- Section listing must-do experiences at Gedulgt -->
+    <section class="must-dos">
+        <h2>Must Do’s</h2>
+        <p>Savor Exquisite Crafted Cocktails:
+            🍹 Immerse yourself in the world of extraordinary cocktails at Gedulgt. Delight your taste buds with expertly crafted drinks that are not only delicious but also visually stunning. Watch in awe as skilled bartenders use innovative techniques, including smoke and vibrant colors, to create a truly unique and memorable drinking experience.</p>
+        <p>Experience Award-Winning Excellence:
+            🏆 Enjoy cocktails at a bar that has been recognized as the "Best Cocktail Bar In Denmark People's Choice" in 2022. Revel in the expertise of the bartenders, one of whom holds the prestigious title of "Best Bartender in Denmark." By choosing Gedulgt, you're opting for an award-winning establishment that takes cocktail craftsmanship to new heights.</p>
+        <p>Unwind in a Stylish and Cozy Ambiance:
+            🕯️ Indulge in the special atmosphere at Gedulgt, characterized by its stylish and cozy setting. Whether seated at the long bar, observing the bartenders' artistry, or at one of the tables, you'll find a welcoming environment to unwind and enjoy your cocktails. The ambiance adds an extra layer to your overall experience, making it both sophisticated and comfortable.</p>
+    </section>
+
+    <!-- Section with a button linking to the next page -->
+    <section class="next-button">
+        <a href="uexend.html">
+            <img src="images/uexnext.png" alt="Next Button">
+        </a>
+    </section>
+
+    <!-- Section displaying the second image -->
+    <section class="uex-image-2">
+        <img src="images/gd2.jpg" alt="Gedulgt Image 2">
+    </section>
+
+    <!-- Script link for JavaScript -->
+    <script src="js.js"></script>
+</body>
+</html>

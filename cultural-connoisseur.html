@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cc.css">
+    <style>
+        /* Added this CSS for the visible menu options */
+        .menu {
+            display: none; /* Hide the menu by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70vw;
+            height: 100vh;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            flex-direction: column; 
+        }
+
+        .menu-section {
+            margin: 50px;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .header-text {
+            cursor: pointer;
+        }
+    </style>
+    <title>Your Page</title>
+</head>
+<body>
+
+    <header>
+        <img src="images/nuu.png" alt="Header Image" class="header-image">
+        
+        <!-- Added the visible menu options -->
+        <div class="header-text" onclick="toggleMenu()">≡</div>
+        <div class="menu" id="menu">
+            <div class="menu-section" onclick="navigateTo('index.html')">Home</div>
+            <div class="menu-section" onclick="navigateTo('artenthusiast.html')">Art Enthusiast</div>
+            <div class="menu-section" onclick="navigateTo('urbanexplorer.html')">Urban Explorer</div>
+            
+
+            <!-- Added other menu options as I needed -->
+        </div>
+    </header>
+
+    <section class="body-text">
+        <p>The Cultural Connoisseur, with an insatiable appetite for artistic expression and historical depth, is a seeker of beauty and meaning in every corner of Århus. This sophisticated explorer is drawn to the city's cultural tapestry, eager to uncover the hidden gems that define its artistic soul. With a refined palate for creativity and a passion for the stories that shape the city, the Cultural Connoisseur is ready to embark on a journey that transcends time and aesthetic boundaries. The three following experiences have been handpicked for the Cultural Connoisseur to get their soul full of the essence of Århus Centrum.</p>
+    </section>
+
+    <section class="large-image">
+        <img src="images/ccdigest.png" alt="digest icon">
+    </section>
+
+    <section class="small-image">
+        <a href="godsbanen.html">
+            <img src="images/begincc.png" alt="next button">
+        </a>
+    </section>
+
+    <!--  JavaScript file -->
+    <script src="js.js"></script>
+ 
+    
+    
+</body>
+</html>
+
+

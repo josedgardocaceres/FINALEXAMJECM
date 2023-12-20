@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cc.css">
+    <style>
+        /* Add this CSS for the visible menu options */
+        .menu {
+            display: none; /* Hide the menu by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 70vw;
+            height: 100vh;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            flex-direction: column; 
+        }
+
+        .menu-section {
+            margin: 50px;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .header-text {
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        /* Add this CSS for the 'active' class */
+        .stars .star.active {
+            color: #FFD700; /* Change to your desired color when selected, e.g., gold */
+        }
+    
+        .stars {
+            font-size: 30px; /* Adjust the font size for the stars */
+        }
+    </style>
+    <title>Your Page</title>
+</head>
+<body>
+
+    <header>
+        <img src="images/nuu.png" alt="Header Image" class="header-image">
+        <div class="header-text" onclick="toggleMenu()">≡</div>
+        <div class="menu" id="menu">
+            <div class="menu-section" onclick="navigateTo('index.html')">Home</div>
+            <div class="menu-section" onclick="navigateTo('artenthusiast.html')">Art Enthusiast</div>
+            <div class="menu-section" onclick="navigateTo('urbanexplorer.html')">Urban Explorer</div>
+            
+
+            <!-- Add other menu options as needed -->
+        </div>
+    </header>
+    </header>
+    
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <ul>
+            <li><a href="cultural-connoisseur.html">Cultural Connoisseur</a></li>
+            <li><a href="godsbanen.html">Godsbanen</a></li>
+            <li><a href="lecoq.html">Lecoq</a></li>
+            <li><a href="headquarters.html">HeadQuarters></a></li>
+            <li><a href="ccend.html">Rate Your Experience</a></li>
+        </ul>
+    </nav>
+
+    <!-- rate CC Image 1 -->
+    <section class="ad-image-1">
+        <img src="images/ad rate.png" alt="Godsbanen Image 1">
+    </section>
+
+    <h2>Cultural Connoisseur</h2>
+    <div class="rating-section">
+        <div class="stars star-container" id="godsbanen-stars">
+            <span class="star" data-value="1" onclick="rate(1)">★</span>
+            <span class="star" data-value="2" onclick="rate(2)">★</span>
+            <span class="star" data-value="3" onclick="rate(3)">★</span>
+            <span class="star" data-value="4" onclick="rate(4)">★</span>
+            <span class="star" data-value="5" onclick="rate(5)">★</span>
+            <button onclick="submitRating()">Submit Rating</button>
+        </div>
+    </div>
+
+    <a href="index.html">
+        <img src="images/ccend.png" alt="End Image" class="end-image">
+    </a>
+
+    <!--  JavaScript file -->
+    <script src="js.js"></script>
+</body>
+</html>
+
+
+
+
+
